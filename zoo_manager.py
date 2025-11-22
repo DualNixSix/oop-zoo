@@ -8,7 +8,7 @@ class Animal:
         return f"{self.name}"
     
     def speak(self):
-        print (f"I am a {self.name} and I make the {self.sound} sound.")
+        print (f"\nI am a {self.species} and I make the {self.sound}.")
     
 class Mammal(Animal):
     def __init__(self, name):
@@ -72,4 +72,7 @@ print (f"\n{bird1.name}'s wingspan is {bird1.wingspan} meters long!")
 reptile1.bask_in_sun()
 primate1.climb_trees()
 marsupial1.carry_baby()
-print("")
+mammal1.speak()
+reptile1.speak()
+primate1.speak()
+marsupial1.speak()
